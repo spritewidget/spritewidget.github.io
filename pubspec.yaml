@@ -1,0 +1,37 @@
+name: spritewidget_web
+description: The SpriteWidget web page
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 0.0.1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.0.20
+  spritewidget:
+    path: ../spritewidget
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/rocket.png
+    - assets/fire-particle.png
+    - assets/firework-particle.png
+    - assets/serverpod-logo.png
+
+  fonts:
+    - family: 'Shadows'
+      fonts:
+        - asset: google_fonts/shadows.ttf
+          weight: 400
