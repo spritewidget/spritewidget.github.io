@@ -5,8 +5,10 @@ import 'package:spritewidget/spritewidget.dart';
 import 'package:spritewidget_web/src/assets.dart';
 import 'package:spritewidget_web/src/demo.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 void main() {
+  setPathUrlStrategy();
   runApp(const SpriteWidgetApp());
 }
 
