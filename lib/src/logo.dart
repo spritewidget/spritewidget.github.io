@@ -25,7 +25,7 @@ class Logo extends Node {
       MotionTween(
         setter: (double a) => logo.scale = a,
         start: 0.0,
-        end: 0.35,
+        end: 0.45,
         duration: 1.0,
         curve: Curves.bounceOut,
       ),
@@ -45,15 +45,15 @@ class Logo extends Node {
       MotionDelay(delay: 3.0),
       MotionTween(
         setter: (double a) => logo.scale = a,
-        start: 0.35,
-        end: 0.45,
+        start: 0.45,
+        end: 0.55,
         duration: 1.0,
         curve: Curves.bounceOut,
       ),
       MotionTween(
         setter: (double a) => logo.scale = a,
-        start: 0.45,
-        end: 0.35,
+        start: 0.55,
+        end: 0.45,
         duration: 1.0,
         curve: Curves.bounceOut,
       ),
@@ -68,7 +68,7 @@ class Logo extends Node {
     label.position = const Offset(0.0, 70.0);
     label.skewX = -3.5;
     label.textAlign = TextAlign.center;
-    label.scale = 0.7;
+    label.scale = 1.0;
     addChild(label);
 
     // Label intro animation

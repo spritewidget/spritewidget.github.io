@@ -20,6 +20,7 @@ class SpriteWidgetApp extends StatelessWidget {
       title: 'SpriteWidget',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.compact,
       ),
       home: const SpriteWidgetHomePage(),
     );
@@ -113,7 +114,38 @@ class _SpriteWidgetHomePageState extends State<SpriteWidgetHomePage> {
                     ),
                   ),
                   SizedBox(
-                    height: max(mq.size.height / 4 - 70, 0),
+                    height: 16,
+                  ),
+                  MaterialButton(
+                    color: Colors.cyan[600],
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 46, vertical: 16),
+                    elevation: 16,
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                      side: BorderSide(color: Colors.white, width: 2),
+                    ),
+                    onPressed: () {
+                      launch('https://spritewidget.com/spaceblast');
+                    },
+                    child: const Text(
+                      'Play a Game',
+                      style: TextStyle(
+                        fontFamily: 'Shadows',
+                        fontSize: 20,
+                        color: Colors.white,
+                        shadows: [
+                          BoxShadow(
+                            blurRadius: 2,
+                            offset: Offset(0.0, 2.0),
+                            color: Colors.black54,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: max(mq.size.height / 4 - 90, 0),
                   ),
                   Image.asset(
                     'assets/serverpod-logo.png',
