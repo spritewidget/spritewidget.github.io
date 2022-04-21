@@ -1,0 +1,4 @@
+#!/bin/sh
+
+flutter build web --web-renderer canvaskit
+cp -rf build/web/* docs/
