@@ -79,7 +79,7 @@ class _Rocket extends Node {
       texture: SpriteTexture(images[ImageAssets.fireParticle]!),
       life: 1.0,
       lifeVar: 0.3,
-      posVar: Offset(10, 10),
+      posVar: const Offset(10, 10),
       startSize: 0.4,
       startSizeVar: 0.25,
       endSize: 0.2,
@@ -92,10 +92,10 @@ class _Rocket extends Node {
       emissionRate: 82.89703049584841,
       colorSequence: ColorSequence(
         colors: [
-          Color(0x00FDE556),
-          Color(0xFFFFEA4B),
-          Color(0xFFDF3B3B),
-          Color(0x00FF4141)
+          const Color(0x00FDE556),
+          const Color(0xFFFFEA4B),
+          const Color(0xFFDF3B3B),
+          const Color(0x00FF4141)
         ],
         stops: [0.0, 0.2, 0.7, 1.0],
       ),
@@ -106,7 +106,7 @@ class _Rocket extends Node {
       numParticlesToEmit: 0,
       autoRemoveOnFinish: false,
       blendMode: BlendMode.plus,
-    )..position = Offset(0, 55);
+    )..position = const Offset(0, 55);
     addChild(particles);
 
     var sprite = Sprite.fromImage(images[ImageAssets.rocket]!)..scale = 0.5;

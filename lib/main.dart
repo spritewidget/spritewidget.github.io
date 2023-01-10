@@ -95,7 +95,10 @@ class _SpriteWidgetHomePageState extends State<SpriteWidgetHomePage> {
                       side: BorderSide(color: Colors.white, width: 2),
                     ),
                     onPressed: () {
-                      launch('https://github.com/spritewidget/spritewidget');
+                      launchUrl(
+                        Uri.parse(
+                            'https://github.com/spritewidget/spritewidget'),
+                      );
                     },
                     child: const Text(
                       'Get Started :)',
@@ -113,7 +116,7 @@ class _SpriteWidgetHomePageState extends State<SpriteWidgetHomePage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   MaterialButton(
@@ -126,7 +129,9 @@ class _SpriteWidgetHomePageState extends State<SpriteWidgetHomePage> {
                       side: BorderSide(color: Colors.white, width: 2),
                     ),
                     onPressed: () {
-                      launch('https://spritewidget.com/spaceblast');
+                      launchUrl(
+                        Uri.parse('https://spritewidget.dev/spaceblast'),
+                      );
                     },
                     child: const Text(
                       'Play a Game',
